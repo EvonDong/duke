@@ -1,7 +1,6 @@
-import java.util.Scanner;
-
 public class Duke {
     public static void main(String[] args) {
+<<<<<<< HEAD
         greet();
         String[] inputArr = new String[100];
         Scanner sc = new Scanner(System.in);
@@ -41,4 +40,13 @@ public class Duke {
             System.out.println(j + 1 + " " + arr[j]);
         }
     }
+=======
+        String logo = " ____        _        \n"
+                + "|  _ \\ _   _| | _____ \n"
+                + "| | | | | | | |/ / _ \\\n"
+                + "| |_| | |_| |   <  __/\n"
+                + "|____/ \\__,_|_|\\_\\___|\n";
+        System.out.println("Hello from\n" + logo);
+    }
+>>>>>>> parent of 8cc22b2... Added greet, echo, exit functions for level 1
 }
