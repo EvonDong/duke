@@ -1,6 +1,7 @@
+import java.util.Scanner;
+
 public class Duke {
     public static void main(String[] args) {
-<<<<<<< HEAD
         greet();
         String[] inputArr = new String[100];
         Scanner sc = new Scanner(System.in);
@@ -8,7 +9,7 @@ public class Duke {
         while (sc.hasNextLine()) {
             String input = sc.nextLine();
             if(input.equals("list")) {
-                listTasks(inputArr);
+                listItems(inputArr);
             } else if (!input.equals("bye")) {
                 echo(input);
                 inputArr[i] = input;
@@ -35,18 +36,9 @@ public class Duke {
         System.out.println(byeMessage);
     }
 
-    public static void listTasks(String[] arr) {
+    public static void listItems(String[] arr) {
         for (int j = 0; (j < arr.length) && arr[j] != null; j++) {
-            System.out.println(j + 1 + " " + arr[j]);
+            System.out.println(j + 1 + ". " + arr[j]);
         }
     }
-=======
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-        System.out.println("Hello from\n" + logo);
-    }
->>>>>>> parent of 8cc22b2... Added greet, echo, exit functions for level 1
 }
